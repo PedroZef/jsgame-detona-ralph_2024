@@ -37,25 +37,47 @@
     </div>
 
     <div class="panel">
-      <div class="panel-row">
+      <div id="start" class="center">
+        <img src="./src/images/Ralph.gif" alt="foto do Ralph" width="189px" /><br />
+        <h1>Detone o Ralph!</h1>
+        <p class="texto">
+          Acerte o Ralph pelo menos 60x para acabar com suas maldades!
+        </p>
+        <a href="#" id="start-game">Iniciar jogo</a>
+      </div>
+
+      <div class="panel-row hide">
         <div class="square " id="1"></div>
         <div class="square" id="2"></div>
         <div class="square" id="3"></div>
       </div>
 
-      <div class="panel-row">
+      <div class="panel-row hide">
         <div class="square enemy" id="4"></div>
         <div class="square" id="5"></div>
         <div class="square" id="6"></div>
       </div>
 
-      <div class="panel-row">
+      <div class="panel-row hide">
         <div class="square" id="7"></div>
         <div class="square" id="8"></div>
         <div class="square" id="9"></div>
       </div>
+
+      <div id="game-over" class="panel center hide">
+        <img src="./src/images/gameover.gif" alt="foto do ralph" id="ralph" width="198px" /><br />
+        <h1 id="game-title">GAME OVER!</h1>
+        <h2 id="pontuacao"></h2>
+        <a href="#" id="restart-game">Iniciar novamente</a>
+      </div>
     </div>
   </div>
+  <div>
+
+  <footer class="project">
+    <a href="https://github.com/PedroZef/jsgame-detona-ralph_2024">Pedro Zeferino da Silva</a>
+  </footer>
+</div>
 
   <script defer src="./src/scripts/engine.js"></script>
 </body>
